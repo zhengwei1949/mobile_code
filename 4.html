@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+    window.onload = function(){
+        document.documentElement.addEventListener('touchstart',function(){
+            document.getElementById('myaudio').play();
+        })
+    }
+    </script>
 </head>
 <body>
-    <audio controls="controls" autoplay="autoplay">
+    <audio controls="controls" autoplay="autoplay" id="myaudio">
         <source src="./bonus.mp3" type="audio/mpeg" />
     </audio>
 </body>
